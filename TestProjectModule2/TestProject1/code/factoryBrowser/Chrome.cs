@@ -13,7 +13,7 @@ namespace TestProject1.code.factoryBrowser
         public IWebDriver Create()
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Manage().Window.Maximize();
             return driver;
         }
